@@ -1,5 +1,4 @@
 def factorial(n):
-    """Calcula el factorial de un número entero positivo n."""
     if n == 0 or n == 1:
         return 1
     resultado = 1
@@ -8,14 +7,12 @@ def factorial(n):
     return resultado
 
 def productoria(lista):
-    """Calcula la productoria de los elementos de una lista."""
     resultado = 1
     for num in lista:
         resultado *= num
     return resultado
 
 def calcular(**kwargs):
-    """Procesa múltiples factoriales y productorias según los parámetros ingresados."""
     for clave, valor in kwargs.items():
         if "fact_" in clave:  
             print(f"El factorial de {valor} es {factorial(valor)}")
